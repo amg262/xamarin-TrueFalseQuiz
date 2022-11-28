@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrueFalseQuiz.MainPage">
+
+    <StackLayout>
+        <Frame Padding="24" CornerRadius="0">
+            <Label Text="Personality Quiz" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36"/>
+        </Frame>
+        <Label Text="Mondays suck" x:Name="questionArea" FontSize="20" Padding="30,0,30,0" TextColor="Black"/>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Button Text="False" FontSize="24" Clicked="FalseClicked" x:Name="falseButton"/>
+            <Button Grid.Column="1" Text="True" FontSize="24" Clicked="TrueClicked" x:Name="trueButton"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

@@ -90,22 +90,19 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\dog.jpg" />
+    <AndroidResource Include="Resources\drawable\a.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\schrodingers_cat.jpg" />
+    <AndroidResource Include="Resources\drawable\b.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\cat.png" />
+    <AndroidResource Include="Resources\drawable\c.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\angel_demon.png" />
+    <AndroidResource Include="Resources\drawable\d.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\tea_or_coffee.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\blanket.jpg" />
+    <AndroidResource Include="Resources\drawable\e.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

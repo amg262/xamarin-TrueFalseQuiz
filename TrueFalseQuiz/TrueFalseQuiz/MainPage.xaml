@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SwiperNoSwiping"
+
              x:Class="TrueFalseQuiz.MainPage">
 
     <StackLayout>
@@ -20,6 +22,15 @@
             <Button Text="False" FontSize="24" Clicked="FalseClicked" x:Name="falseButton"/>
             <Button Grid.Column="1" Text="True" FontSize="24" Clicked="TrueClicked" x:Name="trueButton"/>
         </Grid>
+        <local:SwipeContainer Swipe="OnSwiped"  HorizontalOptions="Center" 
+         VerticalOptions="CenterAndExpand">
+            <StackLayout>
+                <Image x:Name="theImage" Source="a.jpg" Aspect="AspectFit"
+                               HeightRequest="{OnPlatform iOS=300, Android=250}"
+                               HorizontalOptions="Center" />
+                <Label x:Name="theLabel2" Text="A" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+        </local:SwipeContainer>
     </StackLayout>
 
 </ContentPage>
